@@ -39,3 +39,14 @@ It’s meant for learning structure, layout, and styling using core web technolo
 | **JavaScript (Vanilla)** | Alert functionality for buttons |
 
 ---
+
+```
+hotel-template/
+│
+├── index.html        # Main page
+├── style.css         # Styling
+├── script.js         # Basic JS (alert functionality)
+└── images/           # All image assets
+
+```
+---
