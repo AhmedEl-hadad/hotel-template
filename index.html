@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hotel Template</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a class="nav-link active" href="#">
+        <i class="fa-solid fa-bed"></i> Logo
+      </a>
+      <a class="nav-link" href="#rooms">Rooms</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-link nav-link2">Book Now</a>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="hero section-spacing">
+      <img
+        src="https://www.w3schools.com/w3images/hotel.jpg"
+        class="hero-cover"
+        alt="hero"
+      />
+      <div class="hero-container">
+        <div class="hero-title">
+          <h1><i class="fa-solid fa-bed"></i> Hotel Name</h1>
+        </div>
+
+        <div class="form">
+          <form onsubmit="event.preventDefault(); alert('Room Searched');">
+            <div class="inputs">
+              <label>
+                <p><i class="fa-regular fa-calendar"></i> Check In</p>
+                <input type="text" placeholder="DD MM YYYY" />
+              </label>
+              <label>
+                <p><i class="fa-regular fa-calendar"></i> Check Out</p>
+                <input type="text" placeholder="DD MM YYYY" />
+              </label>
+              <label>
+                <p><i class="fa-solid fa-person"></i> Adults</p>
+                <input type="number" value="1" min="1" />
+              </label>
+              <label>
+                <p><i class="fa-solid fa-baby"></i> Kids</p>
+                <input type="number" value="0" min="0" />
+              </label>
+            </div>
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i> Search availability
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms -->
+    <section id="rooms" class="rooms section-spacing">
+      <h3 class="section-title">Rooms</h3>
+      <p class="section-subtitle">
+        Make yourself at home is our slogan. We offer the best beds in the
+        industry. Sleep well and rest well.
+      </p>
+
+      <div class="form2">
+        <form onsubmit="event.preventDefault(); alert('Searched');">
+          <div class="inputs">
+            <label>
+              <p><i class="fa-regular fa-calendar"></i> Check In</p>
+              <input type="text" placeholder="DD MM YYYY" />
+            </label>
+            <label>
+              <p><i class="fa-regular fa-calendar"></i> Check Out</p>
+              <input type="text" placeholder="DD MM YYYY" />
+            </label>
+            <label>
+              <p><i class="fa-solid fa-person"></i> Adults</p>
+              <input type="number" value="1" min="1" />
+            </label>
+            <label>
+              <p><i class="fa-solid fa-baby"></i> Kids</p>
+              <input type="number" value="0" min="0" />
+            </label>
+            <label>
+              <p><i class="fa-solid fa-magnifying-glass"></i> Search</p>
+              <button type="submit">Search</button>
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <div class="cards-container">
+        <div class="card">
+          <img
+            src="https://www.w3schools.com/w3images/room_single.jpg"
+            alt="room-1"
+          />
+          <div class="card-content">
+            <p class="card-title">Single Room</p>
+            <p class="pricing">From $99</p>
+            <p class="type">Single bed</p>
+            <p class="space">15m&sup2;</p>
+            <p>
+              <i class="fa-solid fa-bath"></i>
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-solid fa-wifi"></i>
+            </p>
+            <button onclick="alert('Room Selected')">Choose Room</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://www.w3schools.com/w3images/room_double.jpg"
+            alt="room-2"
+          />
+          <div class="card-content">
+            <p class="card-title">Double Room</p>
+            <p class="pricing">From $149</p>
+            <p class="type">Queen-size bed</p>
+            <p class="space">25m&sup2;</p>
+            <p>
+              <i class="fa-solid fa-bath"></i>
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-solid fa-wifi"></i>
+            </p>
+            <button onclick="alert('Room Selected')">Choose Room</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://www.w3schools.com/w3images/room_deluxe.jpg"
+            alt="room-3"
+          />
+          <div class="card-content">
+            <p class="card-title">Deluxe Room</p>
+            <p class="pricing">From $199</p>
+            <p class="type">King-size bed</p>
+            <p class="space">40m&sup2;</p>
+            <p>
+              <i class="fa-solid fa-bath"></i>
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-solid fa-wifi"></i>
+            </p>
+            <button onclick="alert('Room Selected')">Choose Room</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about section-spacing">
+      <main>
+        <aside>
+          <h1>About</h1>
+          <p>
+            Our hotel is one of a kind. It is truly amazing. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <div>
+            <p>We accept:</p>
+            <i class="fa-solid fa-credit-card"></i>
+            <i class="fa-solid fa-credit-card"></i>
+            <i class="fa-solid fa-credit-card"></i>
+            <i class="fa-solid fa-credit-card"></i>
+          </div>
+        </aside>
+        <aside>
+          <img
+            src="https://www.w3schools.com/w3images/map.jpg"
+            alt="about section"
+          />
+        </aside>
+      </main>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 Hotel Template. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
